@@ -5,7 +5,6 @@ strategy spec, not a live-trading agent.
 
 This version uses:
 
-- Fake CMC-style daily market history.
 - A deterministic strategy spec: RSI + MACD + Fear & Greed + volume.
 - A simple backtest engine with fees, trades, decisions, return, and drawdown.
 - A small stdlib dashboard for judge-facing explanation.
@@ -27,6 +26,3 @@ Run tests:
 ```bash
 python3 -m unittest discover -s tests
 ```
-
-Track 1 code still exists in `agent/`, `signals/`, `risk/`, and `execution/` as
-a reference. The running dashboard now targets Track 2.
