@@ -134,6 +134,18 @@ INDEX = """<!doctype html>
           <b>Deliverable</b>
           <span>A CMC Skill that turns market data into a backtestable trading strategy spec. No wallet, no execution layer, no live-trading requirement.</span>
         </div>
+        <div class="rule">
+          <b>What this skill does</b>
+          <span>It reads CMC-style market inputs, applies deterministic entry/exit/risk rules, and outputs enter_long, exit_long, or hold with a human-readable reason.</span>
+        </div>
+        <div class="rule">
+          <b>Why it is useful</b>
+          <span>Judges can audit the strategy instead of trusting a black box: every trade, skipped entry, and exit links back to RSI, MACD, Fear & Greed, or volume quality.</span>
+        </div>
+        <div class="rule">
+          <b>Submission artifacts</b>
+          <span>Export JSON for machine-readable review or Markdown for a human-readable strategy document. Both exports use the same spec and backtest shown here.</span>
+        </div>
         <div id="status" class="status" style="margin-top:10px">Ready to run the local CMC-style backtest.</div>
       </section>
       <section>
